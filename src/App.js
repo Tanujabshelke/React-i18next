@@ -1,10 +1,11 @@
+import React from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./App.css";
 import i18n from "./i18n";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
-import Buttons from "./Components/Buttons"
+import Buttons from "./Components/Buttons";
 
 function App() {
   const [lng, setLng] = useState("en-US");
@@ -22,7 +23,6 @@ function App() {
         <Main />
         <Buttons />
       </section>
-
     </div>
   );
 }
