@@ -1,0 +1,25 @@
+{
+    "welcome": "Welcome to the react-i18next ",
+   
+    "interpolation" : {
+        "formatCurrency": "Displaying {{price, currency}} in the selected language",
+        "formatNumber": "Formatting {{num, number}} in the selected language",
+        "formatDate": "Today's date: {{dateVal, date}}"
+
+    },
+    
+    "plurals" : {
+        "key_zero": "zero",
+        "key_one": "singular",
+        "key_two": "two",
+        "key_few": "few",
+        "key_many": "many",
+        "key_other": "other"
+    }
+    
+    
+   
+    
+        
+      
+}

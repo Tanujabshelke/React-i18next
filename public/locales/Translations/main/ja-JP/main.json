@@ -1,0 +1,20 @@
+{
+    "welcome": "react-i18nextチュートリアルへようこそ" ,
+    
+    "interpolation" : {
+        "formatCurrency": "選択したロケールで{{price, currency}}を表示",
+        "formatNumber": "選択した言語で{{num, number}}をフォーマット",
+        "formatDate": "今日の日付：{{dateVal, date}}"
+    },
+
+    "plurals" : {
+        "key_zero": "ゼロ",
+        "key_one": "単数",
+        "key_two": "他",
+        "key_few": "少ない",
+        "key_many": "多い",
+        "key_other": "他"
+    }
+    
+    
+}
