@@ -17,14 +17,14 @@ i18n
     backend: {
       // translation file path
       // loadPath :pathResolver[ns]+"/{{lng}}/{{ns}}.json"
-      loadPath: "/locales/Translations/{{ns}}/{{lng}}/{{ns}}.json",
+      loadPath: "/locales/{{ns}}/{{lng}}/{{ns}}.json",
     },
     fallbackLng: "en-US",
     // disabled in production
     debug: true,
     // can have multiple namespaces, in case you want to divide a huge
     // translation into smaller pieces and load them on demand
-    // ns: ["common"],
+    ns: ["common"],
 
     interpolation: {
       format: (value, format, lng) => {
@@ -43,9 +43,7 @@ i18n
         }
       },
     },
-    // react: {
-    //   wait: true,
-    // },
+    
   });
 
 export default i18n;
