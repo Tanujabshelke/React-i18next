@@ -2,6 +2,7 @@ import i18n from "i18next";
 import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 import moment from "moment";
+import pathResolver from "./pathResolver.json"
 
 // const pathResolver = {
 // "common.charts" : "/locales/Translations/charts",
@@ -16,10 +17,14 @@ i18n
     // resources,
     backend: {
       // translation file path
-      // loadPath :pathResolver[ns]+"/{{lng}}/{{ns}}.json"
-      loadPath: "/locales/{{ns}}/{{lng}}/{{ns}}.json",
+      
+      loadPath: function(lngs,ns){
+        return pathResolver[ns] ? "/locales/"+pathResolver[ns]+"/{{lng}}/{{ns}}.json":"/locales/{{lng}}/{{ns}}.json"
+  }   
+      // loadPath: pathResolver.path+"/{{lng}}/{{ns}}.json",
     },
-    fallbackLng: "en-US",
+    
+    fallbackLng: ["en-US"],
     // disabled in production
     debug: true,
     // can have multiple namespaces, in case you want to divide a huge

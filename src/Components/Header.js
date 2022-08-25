@@ -10,8 +10,7 @@ function Header() {
   const handleLanguageChange = (e) => {
     e.preventDefault();
     console.log("Language::", e.target.value);
-    setLanguage(e.target.value);
-    i18n.changeLanguage(e.target.value);
+    setLanguage(e.target.value);    i18n.changeLanguage(e.target.value);
   };
   return (
     <section className="App-header">
