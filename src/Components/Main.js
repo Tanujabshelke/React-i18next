@@ -1,11 +1,12 @@
 import React from "react";
 import "../App.css";
-import { Trans, useTranslation } from "react-i18next";
+// import { Trans, useTranslation } from "react-i18next";
 import { useState } from "react";
-import i18n from "../i18n";
+import { useT } from "../i18n";
 
 function Main({ lang }) {
-  const { t } = useTranslation(["main"]);
+  // const { t } = useTranslation(["main"]);
+  const t =useT(["main"])
   const [number, setNumber] = useState(0);
 
   const handleInput = (e) => {

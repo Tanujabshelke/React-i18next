@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import "../App.css";
-import { Trans, useTranslation } from "react-i18next";
-import i18n from "../i18n";
+// import {useI18n, useT} from "../i18n";
+import {i18n ,useT} from "../i18n";
+
+
+
 
 function Header() {
-  const { t } = useTranslation(["header"]);
+  // const { t } = useTranslation(["header"]);
+  const t = useT(["header"])
+  // const {i18n} =useI18n();
   const [language, setLanguage] = useState("en-US");
 
   const handleLanguageChange = (e) => {
     e.preventDefault();
     console.log("Language::", e.target.value);
-    setLanguage(e.target.value);    i18n.changeLanguage(e.target.value);
+    setLanguage(e.target.value);   
+     i18n.changeLanguage(e.target.value);
   };
   return (
     <section className="App-header">

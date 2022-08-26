@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <section>
         <Header />
-        <Main />
-        <Buttons />
+        {/* <Main /> */}
+      {/*   <Buttons /> */}
       </section>
     </div>
   );
